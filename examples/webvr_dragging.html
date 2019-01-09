@@ -3,7 +3,13 @@
 	<head>
 		<title>three.js webvr - dragging</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+                <script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js'></script>
+                <script>
+                if (/polyfill=1/.test(window.location.href)) {
+                  var polyfill = new WebVRPolyfill();
+                }
+                </script>
 		<!-- Origin Trial Token, feature = WebXR Device API (For Chrome M69+), origin = https://threejs.org, expires = 2019-01-23 -->
 		<meta http-equiv="origin-trial" data-feature="WebXR Device API (For Chrome M69+)" data-expires="2019-01-23" content="ApibcCZfaeEIkwpe6CSIKZXC8ODly5nYX+QlUSgwhUUlMN1/Ko7dr5XUwZDFl9SiEGtOFFe2csLwnNg33ZBh+QMAAABTeyJvcmlnaW4iOiJodHRwczovL3RocmVlanMub3JnOjQ0MyIsImZlYXR1cmUiOiJXZWJYUkRldmljZU02OSIsImV4cGlyeSI6MTU0ODIwMTU5OX0=">
 		<!-- Origin Trial Token, feature = WebXR Gamepad Support, origin = https://threejs.org, expires = 2019-01-23 -->
