@@ -6,7 +6,7 @@
 	 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
                 <script src='https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js'></script>
                 <script>
-                if (/polyfill=1/.test(window.location.href)) {
+                if (/polyfill=1/.test(window.location.search)) {
                   var polyfill = new WebVRPolyfill();
                 }
                 </script>
